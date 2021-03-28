@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="shoping.exe" version="1.0.0.0" publicKeyToken="15b197ee89c11d27" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="shoping" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="shoping.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="403968">
+      <assemblyIdentity name="MySql.Data" version="6.10.7.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>GBDleX4JPmpqcWIHBaEZQzfkRPC835ra/VHQXmsE50Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="shoping.exe" size="1005568">
+      <assemblyIdentity name="shoping" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>NHDvZ3KX2lvT9Omx7HhttHXAQwh35d5L6p4SPXG0tCg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ar-BH\shoping.resources.dll" size="5632">
+      <assemblyIdentity name="shoping.resources" version="1.0.0.0" language="ar-BH" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>13eBIgtW648CoVygVWFdyvTWGZ5H0Mg+ls7pVLReOvs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Resources\bindingNavigatorAddNewItem.Image.png" size="45825">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EYu0GgKjpVhfI5cbasJuZdRMM2FWJpsOSj3CSsczr94=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\sale psi.ico" size="15086">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9tA/OZzWngOzMaX7zK1cgA2af3tERv82h0CIwv29mH8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\saveToolStripButton.Image.png" size="656">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NyMl30uvrRW/UdljtSgDb5ID+cUMJBjCPtx4J3u8kDQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\toolStripButton1.Image.png" size="424">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VAeRl1Bv8KBsuoODr59Gf1+66H2Pp5ay+FrTPeRRh30=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\toolStripButton2.Image.png" size="461">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>C7KrBpSN61BNA1SJ05NQSfn7my6cbUuiEvJtwFzTiCo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\toolStripButton3.Image.png" size="392">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qSUwQgXk88PakTEa2sN+4oxp8oA+yoU/B4yeJ0EQGo8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\toolStripButton4.Image.png" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pyZ8bEC3APmp4g+yY2poU9AN+cqVMP1Cyej0TMYGssk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\toolStripButton5.Image.png" size="257">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Z+mo3Ro3J4hmOLm4vOI6VGB+63/XXOWENYBpho21OSM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\toolStripButton6.Image.png" size="394">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FOx1HUkJN6pjuyyItU0D7w5bG7SKNSF6AeO4pSkfqak=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="shoping.exe.config" size="520">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>81PfGL/YSbCe5ma9+7tKqlszG3TQ6D55OOqjSxH8qKQ=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=HOSSAM\Eng_Hossam ALya'ari" issuerKeyHash="a963b379cdb85987af2e80081dc7cf9d66ec621f" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>5v4Z3rPsd72MzGyA3K/BqEj7FEL9VH9kMv73RSnZmKU=</DigestValue></Reference></SignedInfo><SignatureValue>HLwn9Nzm7k58AOO+NtFx80J+cF+akB4AiMzQvCOa+D36WjKOQq5DG02rqdTpQtq83flgUJJ0ugNCnPF9Tmjwq4vNxdtRuaxX2Dkq3lAyP5J7ZrZHkPKtGE6vwDGVK0e1yQquHtolpCNrdsUcgeYxrxUXOJt5B853I9YkzR9f4mQ=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tnlM0Vbz2bVGoHxMpJI90Ykxc8oZgfFhDILiWQR0AYHbaKVPaI4ixkF7qSHVo5NhdpVo15lKhNq5AXUkGWB2uh4self3odbqk/MSaTH42FOmaftEOwrm5dMqqJlhzsObZhx5mqzq5HoVaENQX7hQNhyeL3I13dSNEP43sjMHhy0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="a598d92945f7fe32647f54fd4214fb48a8c1afdc806ccc8cbd77ecb3de19fee6" Description="" Url=""><as:assemblyIdentity name="shoping.exe" version="1.0.0.0" publicKeyToken="15b197ee89c11d27" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=HOSSAM\Eng_Hossam ALya'ari</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>EoLwuEtY/cta4mZJFlvqI95gzbE9kj7nD9+zG5/gnTY=</DigestValue></Reference></SignedInfo><SignatureValue>P1prOeAqqf9kRIFS34g4uZoczlVoP2d1jK3oKuC2+XgjSb2UoTEyD9Rx4/LL5Lj2a5M11OzuSueevNyNaPEPNVESA0qANGSiEH7JPP1+2j3J6dD3bILc1GhW2bq3UnwGsoekIHi9RgjRmpD3ajijYuGRVMivX8oIQGDeXFXIGrk=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tnlM0Vbz2bVGoHxMpJI90Ykxc8oZgfFhDILiWQR0AYHbaKVPaI4ixkF7qSHVo5NhdpVo15lKhNq5AXUkGWB2uh4self3odbqk/MSaTH42FOmaftEOwrm5dMqqJlhzsObZhx5mqzq5HoVaENQX7hQNhyeL3I13dSNEP43sjMHhy0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICATCCAWqgAwIBAgIQFlzyMgqRHaBAON7KtTLw0TANBgkqhkiG9w0BAQsFADA/MT0wOwYDVQQDHjQASABPAFMAUwBBAE0AXABFAG4AZwBfAEgAbwBzAHMAYQBtACAAQQBMAHkAYQAnAGEAcgBpMB4XDTE5MDgwMzEyMzc1N1oXDTIwMDgwMjE4Mzc1N1owPzE9MDsGA1UEAx40AEgATwBTAFMAQQBNAFwARQBuAGcAXwBIAG8AcwBzAGEAbQAgAEEATAB5AGEAJwBhAHIAaTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAtnlM0Vbz2bVGoHxMpJI90Ykxc8oZgfFhDILiWQR0AYHbaKVPaI4ixkF7qSHVo5NhdpVo15lKhNq5AXUkGWB2uh4self3odbqk/MSaTH42FOmaftEOwrm5dMqqJlhzsObZhx5mqzq5HoVaENQX7hQNhyeL3I13dSNEP43sjMHhy0CAwEAATANBgkqhkiG9w0BAQsFAAOBgQChg0bjtOKIyJyBD29rlIQKp4cFvwxmZIY38lBF0gYYcAArL1BU+p5Ltzfry+YcSZ1+h9bz2d4QondWdJRZ8wKW6OoJ37kjht9q3aYdeFde1s0T6Klyugmz09XfwPIjkOtfltMrjQDPMLRdaJPfQ8BVlUMXcKxqZ2VrKnMoO/O4/w==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
