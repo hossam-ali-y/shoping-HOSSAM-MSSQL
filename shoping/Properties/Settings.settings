@@ -12,15 +12,15 @@
       <Value Profile="(Default)">0, 0</Value>
     </Setting>
     <Setting Name="h" Type="System.Drawing.Point" Scope="User">
-      <Value Profile="(Default)">400, 0</Value>
+      <Value Profile="(Default)">180, 40</Value>
     </Setting>
     <Setting Name="advanceConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=DESKTOP-NNFPL6R;Initial Catalog=advance;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Data Source=HOSSAM;Initial Catalog=advance;Integrated Security=True&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=DESKTOP-NNFPL6R;Initial Catalog=advance;Integrated Security=True</Value>
+      <Value Profile="(Default)">Data Source=HOSSAM;Initial Catalog=advance;Integrated Security=True</Value>
     </Setting>
   </Settings>
 </SettingsFile>

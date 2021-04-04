@@ -510,20 +510,20 @@ namespace shoping
             System.Windows.Forms.Label emp_passwordLabel;
             System.Windows.Forms.Label emp_statusLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(home));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
             this.last_accountLabel1 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.indivisualDeliverBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -928,6 +928,7 @@ namespace shoping
             end_totalLabel.Size = new System.Drawing.Size(144, 31);
             end_totalLabel.TabIndex = 71;
             end_totalLabel.Text = "اجمالي الحساب الاجل:";
+            end_totalLabel.Click += new System.EventHandler(this.end_totalLabel_Click);
             // 
             // statusLabel
             // 
@@ -940,6 +941,7 @@ namespace shoping
             statusLabel.Size = new System.Drawing.Size(94, 31);
             statusLabel.TabIndex = 69;
             statusLabel.Text = "حالة الحساب:";
+            statusLabel.Click += new System.EventHandler(this.statusLabel_Click);
             // 
             // custom_idLabel
             // 
@@ -952,6 +954,7 @@ namespace shoping
             custom_idLabel.Size = new System.Drawing.Size(87, 31);
             custom_idLabel.TabIndex = 54;
             custom_idLabel.Text = "رقم الحساب:";
+            custom_idLabel.Click += new System.EventHandler(this.custom_idLabel_Click);
             // 
             // label13
             // 
@@ -977,6 +980,7 @@ namespace shoping
             custom_phoneLabel.Size = new System.Drawing.Size(82, 31);
             custom_phoneLabel.TabIndex = 58;
             custom_phoneLabel.Text = "رقم الهاتف:";
+            custom_phoneLabel.Click += new System.EventHandler(this.custom_phoneLabel_Click);
             // 
             // genderLabel
             // 
@@ -990,6 +994,7 @@ namespace shoping
             genderLabel.TabIndex = 60;
             genderLabel.Text = "النوع:";
             genderLabel.Visible = false;
+            genderLabel.Click += new System.EventHandler(this.genderLabel_Click);
             // 
             // start_dateLabel
             // 
@@ -1002,6 +1007,7 @@ namespace shoping
             start_dateLabel.Size = new System.Drawing.Size(139, 31);
             start_dateLabel.TabIndex = 61;
             start_dateLabel.Text = "تاريخ إنشاء الحساب:";
+            start_dateLabel.Click += new System.EventHandler(this.start_dateLabel_Click);
             // 
             // creditLabel
             // 
@@ -1014,6 +1020,7 @@ namespace shoping
             creditLabel.Size = new System.Drawing.Size(108, 31);
             creditLabel.TabIndex = 63;
             creditLabel.Text = "الحساب المدخر:";
+            creditLabel.Click += new System.EventHandler(this.creditLabel_Click);
             // 
             // credit1Label
             // 
@@ -1037,6 +1044,7 @@ namespace shoping
             emp_idLabel.Size = new System.Drawing.Size(63, 20);
             emp_idLabel.TabIndex = 0;
             emp_idLabel.Text = "رقم المسجل";
+            emp_idLabel.Click += new System.EventHandler(this.emp_idLabel_Click);
             // 
             // emp_nameLabel2
             // 
@@ -1046,6 +1054,7 @@ namespace shoping
             emp_nameLabel2.Size = new System.Drawing.Size(63, 20);
             emp_nameLabel2.TabIndex = 2;
             emp_nameLabel2.Text = "اسم المسجل";
+            emp_nameLabel2.Click += new System.EventHandler(this.emp_nameLabel2_Click);
             // 
             // emp_passwordLabel
             // 
@@ -1055,6 +1064,7 @@ namespace shoping
             emp_passwordLabel.Size = new System.Drawing.Size(63, 20);
             emp_passwordLabel.TabIndex = 4;
             emp_passwordLabel.Text = "كلمة المرور";
+            emp_passwordLabel.Click += new System.EventHandler(this.emp_passwordLabel_Click);
             // 
             // emp_statusLabel
             // 
@@ -1064,6 +1074,7 @@ namespace shoping
             emp_statusLabel.Size = new System.Drawing.Size(34, 20);
             emp_statusLabel.TabIndex = 6;
             emp_statusLabel.Text = "الحالة";
+            emp_statusLabel.Click += new System.EventHandler(this.emp_statusLabel_Click);
             // 
             // last_accountLabel1
             // 
@@ -1085,6 +1096,7 @@ namespace shoping
             // 
             this.indivisualDeliverBindingSource.DataMember = "IndivisualDeliver";
             this.indivisualDeliverBindingSource.DataSource = this.advanceDataSet;
+            this.indivisualDeliverBindingSource.CurrentChanged += new System.EventHandler(this.indivisualDeliverBindingSource_CurrentChanged);
             // 
             // advanceDataSet
             // 
@@ -1095,16 +1107,19 @@ namespace shoping
             // 
             this.customerBindingSource.DataMember = "customer";
             this.customerBindingSource.DataSource = this.advanceDataSet;
+            this.customerBindingSource.CurrentChanged += new System.EventHandler(this.customerBindingSource_CurrentChanged);
             // 
             // deliveriesSelectProcBindingSource
             // 
             this.deliveriesSelectProcBindingSource.DataMember = "DeliveriesSelectProc";
             this.deliveriesSelectProcBindingSource.DataSource = this.advanceDataSet;
+            this.deliveriesSelectProcBindingSource.CurrentChanged += new System.EventHandler(this.deliveriesSelectProcBindingSource_CurrentChanged);
             // 
             // proc_select_invoiceBindingSource1
             // 
             this.proc_select_invoiceBindingSource1.DataMember = "proc_select_invoice";
             this.proc_select_invoiceBindingSource1.DataSource = this.advanceDataSet;
+            this.proc_select_invoiceBindingSource1.CurrentChanged += new System.EventHandler(this.proc_select_invoiceBindingSource1_CurrentChanged);
             // 
             // deliveriesSelectProcTableAdapter
             // 
@@ -1131,6 +1146,14 @@ namespace shoping
             // indivisualDeliverTableAdapter
             // 
             this.indivisualDeliverTableAdapter.ClearBeforeFill = true;
+            // 
+            // proc_select_invoiceBindingSource
+            // 
+            this.proc_select_invoiceBindingSource.CurrentChanged += new System.EventHandler(this.proc_select_invoiceBindingSource_CurrentChanged);
+            // 
+            // employeeBindingSource
+            // 
+            this.employeeBindingSource.CurrentChanged += new System.EventHandler(this.employeeBindingSource_CurrentChanged);
             // 
             // customerTableAdapter1
             // 
@@ -1187,7 +1210,6 @@ namespace shoping
             // tabPage3
             // 
             this.tabPage3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.tabPage3.AutoScroll = true;
             this.tabPage3.BackColor = System.Drawing.Color.DarkCyan;
             this.tabPage3.CausesValidation = false;
             this.tabPage3.Controls.Add(this.tab3_hid);
@@ -1212,7 +1234,7 @@ namespace shoping
             this.tabPage3.Location = new System.Drawing.Point(4, 44);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(961, 652);
+            this.tabPage3.Size = new System.Drawing.Size(958, 651);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "المسلمات";
             this.tabPage3.Click += new System.EventHandler(this.tabPage1_Click);
@@ -1221,9 +1243,9 @@ namespace shoping
             // 
             this.tab3_hid.BackColor = System.Drawing.Color.DarkCyan;
             this.tab3_hid.Controls.Add(this.label15);
-            this.tab3_hid.Location = new System.Drawing.Point(0, -7);
+            this.tab3_hid.Location = new System.Drawing.Point(-4, 4);
             this.tab3_hid.Name = "tab3_hid";
-            this.tab3_hid.Size = new System.Drawing.Size(962, 645);
+            this.tab3_hid.Size = new System.Drawing.Size(966, 651);
             this.tab3_hid.TabIndex = 52;
             this.tab3_hid.Paint += new System.Windows.Forms.PaintEventHandler(this.tab3_hid_Paint_2);
             // 
@@ -1236,6 +1258,7 @@ namespace shoping
             this.label15.Size = new System.Drawing.Size(307, 43);
             this.label15.TabIndex = 1;
             this.label15.Text = "من فضلك سجل الدخول اولا";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // indevisiual_deliv_panel
             // 
@@ -1278,7 +1301,7 @@ namespace shoping
             this.indevisiual_deliv_panel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.indevisiual_deliv_panel.Location = new System.Drawing.Point(0, -1);
             this.indevisiual_deliv_panel.Name = "indevisiual_deliv_panel";
-            this.indevisiual_deliv_panel.Size = new System.Drawing.Size(31778, 635);
+            this.indevisiual_deliv_panel.Size = new System.Drawing.Size(31846, 795);
             this.indevisiual_deliv_panel.TabIndex = 51;
             this.indevisiual_deliv_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.indevisiual_deliv_panel_Paint_1);
             // 
@@ -1291,6 +1314,7 @@ namespace shoping
             this.button3.TabIndex = 65;
             this.button3.Text = "طباعة كل المسلمات";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // print
             // 
@@ -1335,7 +1359,7 @@ namespace shoping
             this.radioButton12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton12.Location = new System.Drawing.Point(108, -1);
             this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(28, 35);
+            this.radioButton12.Size = new System.Drawing.Size(29, 35);
             this.radioButton12.TabIndex = 34;
             this.radioButton12.TabStop = true;
             this.radioButton12.Text = "12";
@@ -1363,7 +1387,7 @@ namespace shoping
             this.radioButton10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton10.Location = new System.Drawing.Point(199, -1);
             this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(28, 35);
+            this.radioButton10.Size = new System.Drawing.Size(30, 35);
             this.radioButton10.TabIndex = 32;
             this.radioButton10.TabStop = true;
             this.radioButton10.Text = "10";
@@ -1377,7 +1401,7 @@ namespace shoping
             this.radioButton9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton9.Location = new System.Drawing.Point(249, 0);
             this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(20, 35);
+            this.radioButton9.Size = new System.Drawing.Size(21, 35);
             this.radioButton9.TabIndex = 31;
             this.radioButton9.TabStop = true;
             this.radioButton9.Text = "9";
@@ -1391,7 +1415,7 @@ namespace shoping
             this.radioButton8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton8.Location = new System.Drawing.Point(287, -1);
             this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(20, 35);
+            this.radioButton8.Size = new System.Drawing.Size(21, 35);
             this.radioButton8.TabIndex = 30;
             this.radioButton8.TabStop = true;
             this.radioButton8.Text = "8";
@@ -1419,7 +1443,7 @@ namespace shoping
             this.radioButton6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton6.Location = new System.Drawing.Point(367, -2);
             this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(20, 35);
+            this.radioButton6.Size = new System.Drawing.Size(21, 35);
             this.radioButton6.TabIndex = 29;
             this.radioButton6.Text = "6";
             this.radioButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
@@ -1433,7 +1457,7 @@ namespace shoping
             this.radioButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton5.Location = new System.Drawing.Point(402, -1);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(20, 35);
+            this.radioButton5.Size = new System.Drawing.Size(21, 35);
             this.radioButton5.TabIndex = 28;
             this.radioButton5.Text = "5";
             this.radioButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
@@ -1447,7 +1471,7 @@ namespace shoping
             this.radioButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton4.Location = new System.Drawing.Point(446, -1);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(20, 35);
+            this.radioButton4.Size = new System.Drawing.Size(21, 35);
             this.radioButton4.TabIndex = 27;
             this.radioButton4.Text = "4";
             this.radioButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
@@ -1461,7 +1485,7 @@ namespace shoping
             this.radioButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton3.Location = new System.Drawing.Point(493, -1);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(20, 35);
+            this.radioButton3.Size = new System.Drawing.Size(21, 35);
             this.radioButton3.TabIndex = 26;
             this.radioButton3.Text = "3";
             this.radioButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
@@ -1475,7 +1499,7 @@ namespace shoping
             this.radioButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton2.Location = new System.Drawing.Point(538, -1);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(20, 35);
+            this.radioButton2.Size = new System.Drawing.Size(21, 35);
             this.radioButton2.TabIndex = 25;
             this.radioButton2.Text = "2";
             this.radioButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
@@ -1506,6 +1530,7 @@ namespace shoping
             this.label_num.Size = new System.Drawing.Size(125, 18);
             this.label_num.TabIndex = 50;
             this.label_num.Text = "عدد المسلمات المستعرضة";
+            this.label_num.Click += new System.EventHandler(this.label_num_Click);
             // 
             // label11
             // 
@@ -1515,6 +1540,7 @@ namespace shoping
             this.label11.Size = new System.Drawing.Size(125, 18);
             this.label11.TabIndex = 63;
             this.label11.Text = "عدد المسلمات المستعرضة";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label_part
             // 
@@ -1525,6 +1551,7 @@ namespace shoping
             this.label_part.TabIndex = 49;
             this.label_part.Text = "الجزء";
             this.label_part.Visible = false;
+            this.label_part.Click += new System.EventHandler(this.label_part_Click);
             // 
             // label12
             // 
@@ -1534,6 +1561,7 @@ namespace shoping
             this.label12.Size = new System.Drawing.Size(35, 18);
             this.label12.TabIndex = 62;
             this.label12.Text = "الجزء";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // combo_part
             // 
@@ -1745,6 +1773,7 @@ namespace shoping
             this.comboBox2.Sorted = true;
             this.comboBox2.TabIndex = 61;
             this.comboBox2.Text = "1";
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // comboBox3
             // 
@@ -1806,6 +1835,7 @@ namespace shoping
             this.comboBox3.Size = new System.Drawing.Size(54, 26);
             this.comboBox3.TabIndex = 60;
             this.comboBox3.Text = "15";
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // topToolStripLabel
             // 
@@ -1815,6 +1845,7 @@ namespace shoping
             this.topToolStripLabel.Size = new System.Drawing.Size(125, 18);
             this.topToolStripLabel.TabIndex = 59;
             this.topToolStripLabel.Text = "عدد المسلمات المستعرضة";
+            this.topToolStripLabel.Click += new System.EventHandler(this.topToolStripLabel_Click);
             // 
             // partToolStripLabel
             // 
@@ -1824,6 +1855,7 @@ namespace shoping
             this.partToolStripLabel.Size = new System.Drawing.Size(35, 18);
             this.partToolStripLabel.TabIndex = 58;
             this.partToolStripLabel.Text = "الجزء";
+            this.partToolStripLabel.Click += new System.EventHandler(this.partToolStripLabel_Click);
             // 
             // partToolStripTextBox
             // 
@@ -1896,6 +1928,7 @@ namespace shoping
             this.partToolStripTextBox.Sorted = true;
             this.partToolStripTextBox.TabIndex = 57;
             this.partToolStripTextBox.Text = "1";
+            this.partToolStripTextBox.SelectedIndexChanged += new System.EventHandler(this.partToolStripTextBox_SelectedIndexChanged);
             // 
             // topToolStripTextBox
             // 
@@ -1956,6 +1989,7 @@ namespace shoping
             this.topToolStripTextBox.Size = new System.Drawing.Size(54, 26);
             this.topToolStripTextBox.TabIndex = 56;
             this.topToolStripTextBox.Text = "15";
+            this.topToolStripTextBox.SelectedIndexChanged += new System.EventHandler(this.topToolStripTextBox_SelectedIndexChanged);
             // 
             // bindingNavigator1
             // 
@@ -2025,6 +2059,7 @@ namespace shoping
             this.toolStripButton2.RightToLeftAutoMirrorImage = true;
             this.toolStripButton2.Size = new System.Drawing.Size(52, 42);
             this.toolStripButton2.Text = "حذف";
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click_1);
             // 
             // toolStripButton3
             // 
@@ -2034,6 +2069,7 @@ namespace shoping
             this.toolStripButton3.RightToLeftAutoMirrorImage = true;
             this.toolStripButton3.Size = new System.Drawing.Size(23, 42);
             this.toolStripButton3.Text = "Move first";
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // toolStripButton4
             // 
@@ -2043,11 +2079,13 @@ namespace shoping
             this.toolStripButton4.RightToLeftAutoMirrorImage = true;
             this.toolStripButton4.Size = new System.Drawing.Size(23, 42);
             this.toolStripButton4.Text = "Move previous";
+            this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator1.Click += new System.EventHandler(this.toolStripSeparator1_Click);
             // 
             // toolStripTextBox1
             // 
@@ -2057,6 +2095,7 @@ namespace shoping
             this.toolStripTextBox1.Size = new System.Drawing.Size(50, 23);
             this.toolStripTextBox1.Text = "0";
             this.toolStripTextBox1.ToolTipText = "Current position";
+            this.toolStripTextBox1.Click += new System.EventHandler(this.toolStripTextBox1_Click);
             // 
             // toolStripLabel1
             // 
@@ -2064,11 +2103,13 @@ namespace shoping
             this.toolStripLabel1.Size = new System.Drawing.Size(35, 42);
             this.toolStripLabel1.Text = "of {0}";
             this.toolStripLabel1.ToolTipText = "Total number of items";
+            this.toolStripLabel1.Click += new System.EventHandler(this.toolStripLabel1_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator2.Click += new System.EventHandler(this.toolStripSeparator2_Click);
             // 
             // toolStripButton5
             // 
@@ -2078,6 +2119,7 @@ namespace shoping
             this.toolStripButton5.RightToLeftAutoMirrorImage = true;
             this.toolStripButton5.Size = new System.Drawing.Size(23, 42);
             this.toolStripButton5.Text = "Move next";
+            this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
             // 
             // toolStripButton6
             // 
@@ -2087,21 +2129,25 @@ namespace shoping
             this.toolStripButton6.RightToLeftAutoMirrorImage = true;
             this.toolStripButton6.Size = new System.Drawing.Size(23, 42);
             this.toolStripButton6.Text = "Move last";
+            this.toolStripButton6.Click += new System.EventHandler(this.toolStripButton6_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator3.Click += new System.EventHandler(this.toolStripSeparator3_Click);
             // 
             // toolStripSeparator15
             // 
             this.toolStripSeparator15.Name = "toolStripSeparator15";
             this.toolStripSeparator15.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator15.Click += new System.EventHandler(this.toolStripSeparator15_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator4.Click += new System.EventHandler(this.toolStripSeparator4_Click);
             // 
             // saveToolStripButton
             // 
@@ -2117,6 +2163,7 @@ namespace shoping
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
             this.toolStripSeparator11.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator11.Click += new System.EventHandler(this.toolStripSeparator11_Click);
             // 
             // toolStripButton11
             // 
@@ -2134,6 +2181,7 @@ namespace shoping
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
             this.toolStripSeparator.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator.Click += new System.EventHandler(this.toolStripSeparator_Click);
             // 
             // toolStripButton7
             // 
@@ -2149,11 +2197,13 @@ namespace shoping
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
             this.toolStripSeparator12.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator12.Click += new System.EventHandler(this.toolStripSeparator12_Click);
             // 
             // toolStripSeparator17
             // 
             this.toolStripSeparator17.Name = "toolStripSeparator17";
             this.toolStripSeparator17.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator17.Click += new System.EventHandler(this.toolStripSeparator17_Click_1);
             // 
             // toolStripButton13
             // 
@@ -2169,6 +2219,7 @@ namespace shoping
             // 
             this.toolStripSeparator13.Name = "toolStripSeparator13";
             this.toolStripSeparator13.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator13.Click += new System.EventHandler(this.toolStripSeparator13_Click);
             // 
             // toolStripButton44
             // 
@@ -2196,6 +2247,7 @@ namespace shoping
             // 
             this.toolStripSeparator18.Name = "toolStripSeparator18";
             this.toolStripSeparator18.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator18.Click += new System.EventHandler(this.toolStripSeparator18_Click);
             // 
             // toolStripButton17
             // 
@@ -2213,6 +2265,7 @@ namespace shoping
             // 
             this.toolStripSeparator14.Name = "toolStripSeparator14";
             this.toolStripSeparator14.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator14.Click += new System.EventHandler(this.toolStripSeparator14_Click);
             // 
             // toolStripButton16
             // 
@@ -2228,6 +2281,7 @@ namespace shoping
             // 
             this.toolStripSeparator19.Name = "toolStripSeparator19";
             this.toolStripSeparator19.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator19.Click += new System.EventHandler(this.toolStripSeparator19_Click);
             // 
             // last_account
             // 
@@ -2237,6 +2291,7 @@ namespace shoping
             this.last_account.Size = new System.Drawing.Size(75, 18);
             this.last_account.TabIndex = 53;
             this.last_account.Text = "الحساب السابق";
+            this.last_account.Click += new System.EventHandler(this.last_account_Click);
             // 
             // last_accountTextBox
             // 
@@ -2247,6 +2302,7 @@ namespace shoping
             this.last_accountTextBox.Size = new System.Drawing.Size(200, 26);
             this.last_accountTextBox.TabIndex = 52;
             this.last_accountTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.last_accountTextBox.TextChanged += new System.EventHandler(this.last_accountTextBox_TextChanged);
             // 
             // noticesLabel1
             // 
@@ -2256,6 +2312,7 @@ namespace shoping
             this.noticesLabel1.Size = new System.Drawing.Size(42, 18);
             this.noticesLabel1.TabIndex = 38;
             this.noticesLabel1.Text = "ملاحظة";
+            this.noticesLabel1.Click += new System.EventHandler(this.noticesLabel1_Click);
             // 
             // noticesTextBox
             // 
@@ -2265,6 +2322,7 @@ namespace shoping
             this.noticesTextBox.Size = new System.Drawing.Size(286, 26);
             this.noticesTextBox.TabIndex = 39;
             this.noticesTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.noticesTextBox.TextChanged += new System.EventHandler(this.noticesTextBox_TextChanged);
             // 
             // deliver_dateLabel
             // 
@@ -2274,6 +2332,7 @@ namespace shoping
             this.deliver_dateLabel.Size = new System.Drawing.Size(64, 18);
             this.deliver_dateLabel.TabIndex = 36;
             this.deliver_dateLabel.Text = "تاريخ التسليم";
+            this.deliver_dateLabel.Click += new System.EventHandler(this.deliver_dateLabel_Click);
             // 
             // deliver_dateDateTimePicker
             // 
@@ -2283,6 +2342,7 @@ namespace shoping
             this.deliver_dateDateTimePicker.RightToLeftLayout = true;
             this.deliver_dateDateTimePicker.Size = new System.Drawing.Size(225, 26);
             this.deliver_dateDateTimePicker.TabIndex = 37;
+            this.deliver_dateDateTimePicker.ValueChanged += new System.EventHandler(this.deliver_dateDateTimePicker_ValueChanged);
             // 
             // custom_nameTextBox
             // 
@@ -2304,6 +2364,7 @@ namespace shoping
             // 
             this.customerDataTableTableAdapter1BindingSource.DataMember = "customer_DataTableTableAdapter1";
             this.customerDataTableTableAdapter1BindingSource.DataSource = this.advanceDataSet;
+            this.customerDataTableTableAdapter1BindingSource.CurrentChanged += new System.EventHandler(this.customerDataTableTableAdapter1BindingSource_CurrentChanged);
             // 
             // delivery_idLabel1
             // 
@@ -2313,6 +2374,7 @@ namespace shoping
             this.delivery_idLabel1.Size = new System.Drawing.Size(87, 18);
             this.delivery_idLabel1.TabIndex = 18;
             this.delivery_idLabel1.Text = "رقم فاتورة التسليم";
+            this.delivery_idLabel1.Click += new System.EventHandler(this.delivery_idLabel1_Click);
             // 
             // delivery_idTextBox
             // 
@@ -2325,6 +2387,7 @@ namespace shoping
             this.delivery_idTextBox.Size = new System.Drawing.Size(112, 27);
             this.delivery_idTextBox.TabIndex = 19;
             this.delivery_idTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.delivery_idTextBox.TextChanged += new System.EventHandler(this.delivery_idTextBox_TextChanged_1);
             // 
             // custom_nameLabel1
             // 
@@ -2334,6 +2397,7 @@ namespace shoping
             this.custom_nameLabel1.Size = new System.Drawing.Size(68, 18);
             this.custom_nameLabel1.TabIndex = 20;
             this.custom_nameLabel1.Text = "اسم المستخدم";
+            this.custom_nameLabel1.Click += new System.EventHandler(this.custom_nameLabel1_Click);
             // 
             // delivered_moneyLabel1
             // 
@@ -2343,6 +2407,7 @@ namespace shoping
             this.delivered_moneyLabel1.Size = new System.Drawing.Size(67, 18);
             this.delivered_moneyLabel1.TabIndex = 24;
             this.delivered_moneyLabel1.Text = "القيمة المسلمة";
+            this.delivered_moneyLabel1.Click += new System.EventHandler(this.delivered_moneyLabel1_Click);
             // 
             // delivered_moneyTextBox
             // 
@@ -2353,6 +2418,7 @@ namespace shoping
             this.delivered_moneyTextBox.Size = new System.Drawing.Size(200, 26);
             this.delivered_moneyTextBox.TabIndex = 25;
             this.delivered_moneyTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.delivered_moneyTextBox.TextChanged += new System.EventHandler(this.delivered_moneyTextBox_TextChanged);
             // 
             // after_deliveringLabel
             // 
@@ -2362,6 +2428,7 @@ namespace shoping
             this.after_deliveringLabel.Size = new System.Drawing.Size(92, 18);
             this.after_deliveringLabel.TabIndex = 26;
             this.after_deliveringLabel.Text = "الحساب بعد التسليم";
+            this.after_deliveringLabel.Click += new System.EventHandler(this.after_deliveringLabel_Click);
             // 
             // after_deliveringTextBox
             // 
@@ -2372,6 +2439,7 @@ namespace shoping
             this.after_deliveringTextBox.Size = new System.Drawing.Size(200, 26);
             this.after_deliveringTextBox.TabIndex = 27;
             this.after_deliveringTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.after_deliveringTextBox.TextChanged += new System.EventHandler(this.after_deliveringTextBox_TextChanged);
             // 
             // emp_nameLabel1
             // 
@@ -2381,6 +2449,7 @@ namespace shoping
             this.emp_nameLabel1.Size = new System.Drawing.Size(48, 18);
             this.emp_nameLabel1.TabIndex = 32;
             this.emp_nameLabel1.Text = "الموضف";
+            this.emp_nameLabel1.Click += new System.EventHandler(this.emp_nameLabel1_Click);
             // 
             // emp_nameTextBox
             // 
@@ -2391,25 +2460,26 @@ namespace shoping
             this.emp_nameTextBox.ReadOnly = true;
             this.emp_nameTextBox.Size = new System.Drawing.Size(166, 26);
             this.emp_nameTextBox.TabIndex = 33;
+            this.emp_nameTextBox.TextChanged += new System.EventHandler(this.emp_nameTextBox_TextChanged);
             // 
             // indivisualDeliverDataGridView
             // 
             this.indivisualDeliverDataGridView.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Plum;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.indivisualDeliverDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.Plum;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.indivisualDeliverDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
             this.indivisualDeliverDataGridView.AutoGenerateColumns = false;
             this.indivisualDeliverDataGridView.BackgroundColor = System.Drawing.Color.LightGray;
             this.indivisualDeliverDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.indivisualDeliverDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.indivisualDeliverDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.indivisualDeliverDataGridView.ColumnHeadersHeight = 41;
             this.indivisualDeliverDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -2421,29 +2491,29 @@ namespace shoping
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8});
             this.indivisualDeliverDataGridView.DataSource = this.indivisualDeliverBindingSource;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Plum;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.indivisualDeliverDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.Plum;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.indivisualDeliverDataGridView.DefaultCellStyle = dataGridViewCellStyle21;
             this.indivisualDeliverDataGridView.Location = new System.Drawing.Point(22, 242);
             this.indivisualDeliverDataGridView.Name = "indivisualDeliverDataGridView";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Thistle;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.indivisualDeliverDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.Thistle;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.indivisualDeliverDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.indivisualDeliverDataGridView.RowHeadersVisible = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Thistle;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.indivisualDeliverDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.Thistle;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.indivisualDeliverDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle23;
             this.indivisualDeliverDataGridView.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.indivisualDeliverDataGridView.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.Thistle;
             this.indivisualDeliverDataGridView.RowTemplate.DefaultCellStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
@@ -2452,6 +2522,7 @@ namespace shoping
             this.indivisualDeliverDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.indivisualDeliverDataGridView.Size = new System.Drawing.Size(927, 391);
             this.indivisualDeliverDataGridView.TabIndex = 0;
+            this.indivisualDeliverDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.indivisualDeliverDataGridView_CellContentClick_1);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -2516,6 +2587,7 @@ namespace shoping
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(0, 18);
             this.label7.TabIndex = 44;
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // comboBox1
             // 
@@ -2532,12 +2604,14 @@ namespace shoping
             this.comboBox1.TabIndex = 33;
             this.comboBox1.Tag = "الاسم";
             this.comboBox1.ValueMember = "custom_name";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
             this.comboBox1.MouseHover += new System.EventHandler(this.comboBox1_MouseHover);
             // 
             // customerDataTableBindingSource
             // 
             this.customerDataTableBindingSource.DataMember = "customer_DataTable";
             this.customerDataTableBindingSource.DataSource = this.advanceDataSet;
+            this.customerDataTableBindingSource.CurrentChanged += new System.EventHandler(this.customerDataTableBindingSource_CurrentChanged);
             // 
             // deliveriesSelectProcDataGridView
             // 
@@ -2547,14 +2621,14 @@ namespace shoping
             this.deliveriesSelectProcDataGridView.BackgroundColor = System.Drawing.Color.SlateGray;
             this.deliveriesSelectProcDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.deliveriesSelectProcDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Georgia", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.deliveriesSelectProcDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Georgia", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.deliveriesSelectProcDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.deliveriesSelectProcDataGridView.ColumnHeadersHeight = 41;
             this.deliveriesSelectProcDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.deliveryidDataGridViewTextBoxColumn,
@@ -2566,29 +2640,29 @@ namespace shoping
             this.noticesDataGridViewTextBoxColumn,
             this.empnameDataGridViewTextBoxColumn});
             this.deliveriesSelectProcDataGridView.DataSource = this.deliveriesSelectProcBindingSource;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Thistle;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Georgia", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.deliveriesSelectProcDataGridView.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.Thistle;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Georgia", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.deliveriesSelectProcDataGridView.DefaultCellStyle = dataGridViewCellStyle16;
             this.deliveriesSelectProcDataGridView.Location = new System.Drawing.Point(34, 163);
             this.deliveriesSelectProcDataGridView.Name = "deliveriesSelectProcDataGridView";
             this.deliveriesSelectProcDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Thistle;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Georgia", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.deliveriesSelectProcDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.Thistle;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Georgia", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.deliveriesSelectProcDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.deliveriesSelectProcDataGridView.RowHeadersVisible = false;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deliveriesSelectProcDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deliveriesSelectProcDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle18;
             this.deliveriesSelectProcDataGridView.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.deliveriesSelectProcDataGridView.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.deliveriesSelectProcDataGridView.RowTemplate.DefaultCellStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
@@ -2661,6 +2735,7 @@ namespace shoping
             this.delivery_idLabel.Size = new System.Drawing.Size(94, 18);
             this.delivery_idLabel.TabIndex = 21;
             this.delivery_idLabel.Text = "رقم فاتورة التسليم";
+            this.delivery_idLabel.Click += new System.EventHandler(this.delivery_idLabel_Click);
             // 
             // d_id
             // 
@@ -2673,6 +2748,7 @@ namespace shoping
             this.d_id.Size = new System.Drawing.Size(73, 24);
             this.d_id.TabIndex = 22;
             this.d_id.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.d_id.TextChanged += new System.EventHandler(this.d_id_TextChanged);
             // 
             // custom_nameLabel
             // 
@@ -2682,6 +2758,7 @@ namespace shoping
             this.custom_nameLabel.Size = new System.Drawing.Size(74, 18);
             this.custom_nameLabel.TabIndex = 23;
             this.custom_nameLabel.Text = "اسم المستخدم";
+            this.custom_nameLabel.Click += new System.EventHandler(this.custom_nameLabel_Click);
             // 
             // last_accountLabel
             // 
@@ -2691,6 +2768,7 @@ namespace shoping
             this.last_accountLabel.Size = new System.Drawing.Size(84, 18);
             this.last_accountLabel.TabIndex = 24;
             this.last_accountLabel.Text = "الحساب السابق";
+            this.last_accountLabel.Click += new System.EventHandler(this.last_accountLabel_Click);
             // 
             // lastmony
             // 
@@ -2711,6 +2789,7 @@ namespace shoping
             this.delivered_moneyLabel.Size = new System.Drawing.Size(76, 18);
             this.delivered_moneyLabel.TabIndex = 26;
             this.delivered_moneyLabel.Text = "القيمة المسلمة";
+            this.delivered_moneyLabel.Click += new System.EventHandler(this.delivered_moneyLabel_Click);
             // 
             // mony
             // 
@@ -2721,6 +2800,7 @@ namespace shoping
             this.mony.Size = new System.Drawing.Size(170, 24);
             this.mony.TabIndex = 27;
             this.mony.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mony.TextChanged += new System.EventHandler(this.mony_TextChanged);
             // 
             // noticesLabel
             // 
@@ -2730,6 +2810,7 @@ namespace shoping
             this.noticesLabel.Size = new System.Drawing.Size(46, 18);
             this.noticesLabel.TabIndex = 28;
             this.noticesLabel.Text = "ملاحظة";
+            this.noticesLabel.Click += new System.EventHandler(this.noticesLabel_Click);
             // 
             // notices
             // 
@@ -2739,6 +2820,7 @@ namespace shoping
             this.notices.Size = new System.Drawing.Size(237, 24);
             this.notices.TabIndex = 29;
             this.notices.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.notices.TextChanged += new System.EventHandler(this.notices_TextChanged);
             // 
             // emp_nameLabel
             // 
@@ -2748,6 +2830,7 @@ namespace shoping
             this.emp_nameLabel.Size = new System.Drawing.Size(48, 18);
             this.emp_nameLabel.TabIndex = 30;
             this.emp_nameLabel.Text = "الموظف";
+            this.emp_nameLabel.Click += new System.EventHandler(this.emp_nameLabel_Click);
             // 
             // emp_name
             // 
@@ -2758,6 +2841,7 @@ namespace shoping
             this.emp_name.Size = new System.Drawing.Size(125, 24);
             this.emp_name.TabIndex = 31;
             this.emp_name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.emp_name.TextChanged += new System.EventHandler(this.emp_name_TextChanged);
             // 
             // deliveriesSelectProcBindingNavigator
             // 
@@ -2825,6 +2909,7 @@ namespace shoping
             this.bindingNavigatorCountItem.Size = new System.Drawing.Size(33, 42);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            this.bindingNavigatorCountItem.Click += new System.EventHandler(this.bindingNavigatorCountItem_Click);
             // 
             // bindingNavigatorDeleteItem
             // 
@@ -2844,6 +2929,7 @@ namespace shoping
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 42);
             this.bindingNavigatorMoveFirstItem.Text = "أول سجل";
+            this.bindingNavigatorMoveFirstItem.Click += new System.EventHandler(this.bindingNavigatorMoveFirstItem_Click);
             // 
             // bindingNavigatorMovePreviousItem
             // 
@@ -2853,11 +2939,13 @@ namespace shoping
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 42);
             this.bindingNavigatorMovePreviousItem.Text = "السابق";
+            this.bindingNavigatorMovePreviousItem.Click += new System.EventHandler(this.bindingNavigatorMovePreviousItem_Click);
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
             this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 45);
+            this.bindingNavigatorSeparator.Click += new System.EventHandler(this.bindingNavigatorSeparator_Click);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -2867,11 +2955,13 @@ namespace shoping
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
+            this.bindingNavigatorPositionItem.Click += new System.EventHandler(this.bindingNavigatorPositionItem_Click);
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 45);
+            this.bindingNavigatorSeparator1.Click += new System.EventHandler(this.bindingNavigatorSeparator1_Click);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -2881,6 +2971,7 @@ namespace shoping
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 42);
             this.bindingNavigatorMoveNextItem.Text = "التالي";
+            this.bindingNavigatorMoveNextItem.Click += new System.EventHandler(this.bindingNavigatorMoveNextItem_Click);
             // 
             // bindingNavigatorMoveLastItem
             // 
@@ -2902,11 +2993,13 @@ namespace shoping
             // 
             this.toolStripSeparator16.Name = "toolStripSeparator16";
             this.toolStripSeparator16.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator16.Click += new System.EventHandler(this.toolStripSeparator16_Click);
             // 
             // toolStripSeparator20
             // 
             this.toolStripSeparator20.Name = "toolStripSeparator20";
             this.toolStripSeparator20.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator20.Click += new System.EventHandler(this.toolStripSeparator20_Click);
             // 
             // deliveriesSelectProcBindingNavigatorSaveItem
             // 
@@ -2921,6 +3014,7 @@ namespace shoping
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
             this.toolStripSeparator5.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator5.Click += new System.EventHandler(this.toolStripSeparator5_Click);
             // 
             // toolStripButton9
             // 
@@ -2938,11 +3032,13 @@ namespace shoping
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
             this.toolStripSeparator9.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator9.Click += new System.EventHandler(this.toolStripSeparator9_Click);
             // 
             // toolStripSeparator24
             // 
             this.toolStripSeparator24.Name = "toolStripSeparator24";
             this.toolStripSeparator24.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator24.Click += new System.EventHandler(this.toolStripSeparator24_Click);
             // 
             // toolStripButton8
             // 
@@ -2958,6 +3054,7 @@ namespace shoping
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
             this.toolStripSeparator10.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator10.Click += new System.EventHandler(this.toolStripSeparator10_Click);
             // 
             // toolStripButton45
             // 
@@ -2987,6 +3084,7 @@ namespace shoping
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
             this.toolStripSeparator8.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator8.Click += new System.EventHandler(this.toolStripSeparator8_Click);
             // 
             // toolStripButton19
             // 
@@ -3011,25 +3109,28 @@ namespace shoping
             // 
             this.toolStripSeparator23.Name = "toolStripSeparator23";
             this.toolStripSeparator23.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator23.Click += new System.EventHandler(this.toolStripSeparator23_Click);
             // 
             // customerBindingSource2
             // 
             this.customerBindingSource2.DataMember = "customer";
             this.customerBindingSource2.DataSource = this.advanceDataSet;
+            this.customerBindingSource2.CurrentChanged += new System.EventHandler(this.customerBindingSource2_CurrentChanged);
             // 
             // vwcustomerBindingSource
             // 
             this.vwcustomerBindingSource.DataMember = "vw_customer";
             this.vwcustomerBindingSource.DataSource = this.advanceDataSet;
+            this.vwcustomerBindingSource.CurrentChanged += new System.EventHandler(this.vwcustomerBindingSource_CurrentChanged);
             // 
             // customerBindingSource1
             // 
             this.customerBindingSource1.DataMember = "customer";
             this.customerBindingSource1.DataSource = this.advanceDataSet;
+            this.customerBindingSource1.CurrentChanged += new System.EventHandler(this.customerBindingSource1_CurrentChanged);
             // 
             // tabPage2
             // 
-            this.tabPage2.AutoScroll = true;
             this.tabPage2.BackColor = System.Drawing.Color.DarkCyan;
             this.tabPage2.Controls.Add(this.panel1);
             this.tabPage2.Controls.Add(this.panel3);
@@ -3057,7 +3158,7 @@ namespace shoping
             this.tabPage2.Location = new System.Drawing.Point(4, 44);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(961, 652);
+            this.tabPage2.Size = new System.Drawing.Size(958, 651);
             this.tabPage2.TabIndex = 3;
             this.tabPage2.Text = "الحسابات";
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
@@ -3066,10 +3167,11 @@ namespace shoping
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkCyan;
             this.panel1.Controls.Add(this.label14);
-            this.panel1.Location = new System.Drawing.Point(27, -4);
+            this.panel1.Location = new System.Drawing.Point(-4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(965, 642);
+            this.panel1.Size = new System.Drawing.Size(996, 635);
             this.panel1.TabIndex = 74;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label14
             // 
@@ -3080,6 +3182,7 @@ namespace shoping
             this.label14.Size = new System.Drawing.Size(307, 43);
             this.label14.TabIndex = 0;
             this.label14.Text = "من فضلك سجل الدخول اولا";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // panel3
             // 
@@ -3098,6 +3201,7 @@ namespace shoping
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(990, 639);
             this.panel3.TabIndex = 73;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // bindingNavigator3
             // 
@@ -3141,6 +3245,7 @@ namespace shoping
             this.bindingNavigator3.Size = new System.Drawing.Size(963, 44);
             this.bindingNavigator3.TabIndex = 53;
             this.bindingNavigator3.Text = "bindingNavigator1";
+            this.bindingNavigator3.RefreshItems += new System.EventHandler(this.bindingNavigator3_RefreshItems);
             // 
             // toolStripButton30
             // 
@@ -3156,6 +3261,7 @@ namespace shoping
             // 
             this.employeeBindingSource1.DataMember = "employee";
             this.employeeBindingSource1.DataSource = this.advanceDataSet;
+            this.employeeBindingSource1.CurrentChanged += new System.EventHandler(this.employeeBindingSource1_CurrentChanged);
             // 
             // toolStripLabel3
             // 
@@ -3163,6 +3269,7 @@ namespace shoping
             this.toolStripLabel3.Size = new System.Drawing.Size(35, 41);
             this.toolStripLabel3.Text = "of {0}";
             this.toolStripLabel3.ToolTipText = "Total number of items";
+            this.toolStripLabel3.Click += new System.EventHandler(this.toolStripLabel3_Click);
             // 
             // toolStripButton31
             // 
@@ -3172,6 +3279,7 @@ namespace shoping
             this.toolStripButton31.RightToLeftAutoMirrorImage = true;
             this.toolStripButton31.Size = new System.Drawing.Size(23, 41);
             this.toolStripButton31.Text = "Delete";
+            this.toolStripButton31.Click += new System.EventHandler(this.toolStripButton31_Click);
             // 
             // toolStripButton32
             // 
@@ -3181,6 +3289,7 @@ namespace shoping
             this.toolStripButton32.RightToLeftAutoMirrorImage = true;
             this.toolStripButton32.Size = new System.Drawing.Size(23, 41);
             this.toolStripButton32.Text = "Move first";
+            this.toolStripButton32.Click += new System.EventHandler(this.toolStripButton32_Click);
             // 
             // toolStripButton33
             // 
@@ -3190,11 +3299,13 @@ namespace shoping
             this.toolStripButton33.RightToLeftAutoMirrorImage = true;
             this.toolStripButton33.Size = new System.Drawing.Size(23, 41);
             this.toolStripButton33.Text = "Move previous";
+            this.toolStripButton33.Click += new System.EventHandler(this.toolStripButton33_Click);
             // 
             // toolStripSeparator33
             // 
             this.toolStripSeparator33.Name = "toolStripSeparator33";
             this.toolStripSeparator33.Size = new System.Drawing.Size(6, 44);
+            this.toolStripSeparator33.Click += new System.EventHandler(this.toolStripSeparator33_Click);
             // 
             // toolStripTextBox3
             // 
@@ -3204,11 +3315,13 @@ namespace shoping
             this.toolStripTextBox3.Size = new System.Drawing.Size(55, 23);
             this.toolStripTextBox3.Text = "0";
             this.toolStripTextBox3.ToolTipText = "Current position";
+            this.toolStripTextBox3.Click += new System.EventHandler(this.toolStripTextBox3_Click);
             // 
             // toolStripSeparator34
             // 
             this.toolStripSeparator34.Name = "toolStripSeparator34";
             this.toolStripSeparator34.Size = new System.Drawing.Size(6, 44);
+            this.toolStripSeparator34.Click += new System.EventHandler(this.toolStripSeparator34_Click);
             // 
             // toolStripButton34
             // 
@@ -3218,6 +3331,7 @@ namespace shoping
             this.toolStripButton34.RightToLeftAutoMirrorImage = true;
             this.toolStripButton34.Size = new System.Drawing.Size(23, 41);
             this.toolStripButton34.Text = "Move next";
+            this.toolStripButton34.Click += new System.EventHandler(this.toolStripButton34_Click);
             // 
             // toolStripButton35
             // 
@@ -3227,16 +3341,19 @@ namespace shoping
             this.toolStripButton35.RightToLeftAutoMirrorImage = true;
             this.toolStripButton35.Size = new System.Drawing.Size(23, 41);
             this.toolStripButton35.Text = "Move last";
+            this.toolStripButton35.Click += new System.EventHandler(this.toolStripButton35_Click);
             // 
             // toolStripSeparator35
             // 
             this.toolStripSeparator35.Name = "toolStripSeparator35";
             this.toolStripSeparator35.Size = new System.Drawing.Size(6, 44);
+            this.toolStripSeparator35.Click += new System.EventHandler(this.toolStripSeparator35_Click);
             // 
             // toolStripSeparator36
             // 
             this.toolStripSeparator36.Name = "toolStripSeparator36";
             this.toolStripSeparator36.Size = new System.Drawing.Size(6, 44);
+            this.toolStripSeparator36.Click += new System.EventHandler(this.toolStripSeparator36_Click);
             // 
             // toolStripButton36
             // 
@@ -3250,6 +3367,7 @@ namespace shoping
             // 
             this.toolStripSeparator37.Name = "toolStripSeparator37";
             this.toolStripSeparator37.Size = new System.Drawing.Size(6, 44);
+            this.toolStripSeparator37.Click += new System.EventHandler(this.toolStripSeparator37_Click);
             // 
             // toolStripButton37
             // 
@@ -3265,6 +3383,7 @@ namespace shoping
             // 
             this.toolStripSeparator38.Name = "toolStripSeparator38";
             this.toolStripSeparator38.Size = new System.Drawing.Size(6, 44);
+            this.toolStripSeparator38.Click += new System.EventHandler(this.toolStripSeparator38_Click);
             // 
             // toolStripButton38
             // 
@@ -3280,6 +3399,7 @@ namespace shoping
             // 
             this.toolStripSeparator39.Name = "toolStripSeparator39";
             this.toolStripSeparator39.Size = new System.Drawing.Size(6, 44);
+            this.toolStripSeparator39.Click += new System.EventHandler(this.toolStripSeparator39_Click);
             // 
             // toolStripButton39
             // 
@@ -3297,6 +3417,7 @@ namespace shoping
             // 
             this.toolStripSeparator40.Name = "toolStripSeparator40";
             this.toolStripSeparator40.Size = new System.Drawing.Size(6, 44);
+            this.toolStripSeparator40.Click += new System.EventHandler(this.toolStripSeparator40_Click);
             // 
             // toolStripButton40
             // 
@@ -3374,6 +3495,7 @@ namespace shoping
             this.emp_idTextBox.Name = "emp_idTextBox";
             this.emp_idTextBox.Size = new System.Drawing.Size(176, 24);
             this.emp_idTextBox.TabIndex = 1;
+            this.emp_idTextBox.TextChanged += new System.EventHandler(this.emp_idTextBox_TextChanged);
             // 
             // emp_nameTextBox1
             // 
@@ -3382,6 +3504,7 @@ namespace shoping
             this.emp_nameTextBox1.Name = "emp_nameTextBox1";
             this.emp_nameTextBox1.Size = new System.Drawing.Size(176, 24);
             this.emp_nameTextBox1.TabIndex = 3;
+            this.emp_nameTextBox1.TextChanged += new System.EventHandler(this.emp_nameTextBox1_TextChanged);
             // 
             // emp_passwordTextBox
             // 
@@ -3391,6 +3514,7 @@ namespace shoping
             this.emp_passwordTextBox.PasswordChar = '*';
             this.emp_passwordTextBox.Size = new System.Drawing.Size(176, 24);
             this.emp_passwordTextBox.TabIndex = 5;
+            this.emp_passwordTextBox.TextChanged += new System.EventHandler(this.emp_passwordTextBox_TextChanged);
             // 
             // emp_statusTextBox
             // 
@@ -3399,24 +3523,25 @@ namespace shoping
             this.emp_statusTextBox.Name = "emp_statusTextBox";
             this.emp_statusTextBox.Size = new System.Drawing.Size(176, 24);
             this.emp_statusTextBox.TabIndex = 7;
+            this.emp_statusTextBox.TextChanged += new System.EventHandler(this.emp_statusTextBox_TextChanged);
             // 
             // customerDataGridView
             // 
             this.customerDataGridView.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.customerDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.customerDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle24;
             this.customerDataGridView.AutoGenerateColumns = false;
             this.customerDataGridView.BackgroundColor = System.Drawing.Color.DarkCyan;
             this.customerDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Sitka Small", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.customerDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Sitka Small", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.customerDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
             this.customerDataGridView.ColumnHeadersHeight = 39;
             this.customerDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn9,
@@ -3430,31 +3555,31 @@ namespace shoping
             this.dataGridViewTextBoxColumn17});
             this.customerDataGridView.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.bindingSource1, "custom_id", true));
             this.customerDataGridView.DataSource = this.customerBindingSource;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Sitka Small", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.customerDataGridView.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Sitka Small", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.customerDataGridView.DefaultCellStyle = dataGridViewCellStyle26;
             this.customerDataGridView.Location = new System.Drawing.Point(53, 201);
             this.customerDataGridView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.customerDataGridView.Name = "customerDataGridView";
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Sitka Small", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.customerDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Sitka Small", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.customerDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle27;
             this.customerDataGridView.RowHeadersVisible = false;
             this.customerDataGridView.RowHeadersWidth = 38;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.customerDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.customerDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle28;
             this.customerDataGridView.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.customerDataGridView.RowTemplate.DefaultCellStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.customerDataGridView.RowTemplate.ErrorText = "خطاء في البيانات";
@@ -3462,6 +3587,7 @@ namespace shoping
             this.customerDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.customerDataGridView.Size = new System.Drawing.Size(928, 399);
             this.customerDataGridView.TabIndex = 67;
+            this.customerDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.customerDataGridView_CellContentClick);
             // 
             // dataGridViewTextBoxColumn9
             // 
@@ -3535,6 +3661,7 @@ namespace shoping
             // 
             this.bindingSource1.DataMember = "customer";
             this.bindingSource1.DataSource = this.advanceDataSet1;
+            this.bindingSource1.CurrentChanged += new System.EventHandler(this.bindingSource1_CurrentChanged);
             // 
             // advanceDataSet1
             // 
@@ -3555,6 +3682,7 @@ namespace shoping
             this.custom_idTextBox.Size = new System.Drawing.Size(91, 30);
             this.custom_idTextBox.TabIndex = 55;
             this.custom_idTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.custom_idTextBox.TextChanged += new System.EventHandler(this.custom_idTextBox_TextChanged);
             // 
             // textBox3
             // 
@@ -3582,6 +3710,7 @@ namespace shoping
             this.start_dateDateTimePicker.Name = "start_dateDateTimePicker";
             this.start_dateDateTimePicker.Size = new System.Drawing.Size(200, 32);
             this.start_dateDateTimePicker.TabIndex = 62;
+            this.start_dateDateTimePicker.ValueChanged += new System.EventHandler(this.start_dateDateTimePicker_ValueChanged);
             // 
             // creditTextBox
             // 
@@ -3596,6 +3725,7 @@ namespace shoping
             this.creditTextBox.Size = new System.Drawing.Size(141, 30);
             this.creditTextBox.TabIndex = 64;
             this.creditTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.creditTextBox.TextChanged += new System.EventHandler(this.creditTextBox_TextChanged);
             // 
             // credit1TextBox
             // 
@@ -3611,6 +3741,7 @@ namespace shoping
             this.credit1TextBox.Size = new System.Drawing.Size(113, 28);
             this.credit1TextBox.TabIndex = 66;
             this.credit1TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.credit1TextBox.TextChanged += new System.EventHandler(this.credit1TextBox_TextChanged);
             // 
             // end_totalTextBox
             // 
@@ -3625,6 +3756,7 @@ namespace shoping
             this.end_totalTextBox.Size = new System.Drawing.Size(138, 29);
             this.end_totalTextBox.TabIndex = 72;
             this.end_totalTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.end_totalTextBox.TextChanged += new System.EventHandler(this.end_totalTextBox_TextChanged);
             // 
             // statusTextBox
             // 
@@ -3639,6 +3771,7 @@ namespace shoping
             this.statusTextBox.Size = new System.Drawing.Size(72, 33);
             this.statusTextBox.TabIndex = 70;
             this.statusTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.statusTextBox.TextChanged += new System.EventHandler(this.statusTextBox_TextChanged);
             // 
             // genderTextBox
             // 
@@ -3654,6 +3787,7 @@ namespace shoping
             this.genderTextBox.TabIndex = 68;
             this.genderTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.genderTextBox.Visible = false;
+            this.genderTextBox.TextChanged += new System.EventHandler(this.genderTextBox_TextChanged);
             // 
             // custom_phoneTextBox
             // 
@@ -3668,6 +3802,7 @@ namespace shoping
             this.custom_phoneTextBox.Size = new System.Drawing.Size(183, 32);
             this.custom_phoneTextBox.TabIndex = 59;
             this.custom_phoneTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.custom_phoneTextBox.TextChanged += new System.EventHandler(this.custom_phoneTextBox_TextChanged);
             // 
             // customerBindingNavigator
             // 
@@ -3711,6 +3846,7 @@ namespace shoping
             this.customerBindingNavigator.Size = new System.Drawing.Size(963, 50);
             this.customerBindingNavigator.TabIndex = 52;
             this.customerBindingNavigator.Text = "bindingNavigator1";
+            this.customerBindingNavigator.RefreshItems += new System.EventHandler(this.customerBindingNavigator_RefreshItems);
             // 
             // toolStripButton23
             // 
@@ -3728,6 +3864,7 @@ namespace shoping
             this.toolStripLabel2.Size = new System.Drawing.Size(35, 47);
             this.toolStripLabel2.Text = "of {0}";
             this.toolStripLabel2.ToolTipText = "Total number of items";
+            this.toolStripLabel2.Click += new System.EventHandler(this.toolStripLabel2_Click);
             // 
             // toolStripButton24
             // 
@@ -3737,6 +3874,7 @@ namespace shoping
             this.toolStripButton24.RightToLeftAutoMirrorImage = true;
             this.toolStripButton24.Size = new System.Drawing.Size(23, 47);
             this.toolStripButton24.Text = "Delete";
+            this.toolStripButton24.Click += new System.EventHandler(this.toolStripButton24_Click);
             // 
             // toolStripButton25
             // 
@@ -3746,6 +3884,7 @@ namespace shoping
             this.toolStripButton25.RightToLeftAutoMirrorImage = true;
             this.toolStripButton25.Size = new System.Drawing.Size(23, 47);
             this.toolStripButton25.Text = "Move first";
+            this.toolStripButton25.Click += new System.EventHandler(this.toolStripButton25_Click);
             // 
             // toolStripButton26
             // 
@@ -3755,11 +3894,13 @@ namespace shoping
             this.toolStripButton26.RightToLeftAutoMirrorImage = true;
             this.toolStripButton26.Size = new System.Drawing.Size(23, 47);
             this.toolStripButton26.Text = "Move previous";
+            this.toolStripButton26.Click += new System.EventHandler(this.toolStripButton26_Click);
             // 
             // toolStripSeparator28
             // 
             this.toolStripSeparator28.Name = "toolStripSeparator28";
             this.toolStripSeparator28.Size = new System.Drawing.Size(6, 50);
+            this.toolStripSeparator28.Click += new System.EventHandler(this.toolStripSeparator28_Click);
             // 
             // toolStripTextBox2
             // 
@@ -3769,11 +3910,13 @@ namespace shoping
             this.toolStripTextBox2.Size = new System.Drawing.Size(55, 23);
             this.toolStripTextBox2.Text = "0";
             this.toolStripTextBox2.ToolTipText = "Current position";
+            this.toolStripTextBox2.Click += new System.EventHandler(this.toolStripTextBox2_Click);
             // 
             // toolStripSeparator29
             // 
             this.toolStripSeparator29.Name = "toolStripSeparator29";
             this.toolStripSeparator29.Size = new System.Drawing.Size(6, 50);
+            this.toolStripSeparator29.Click += new System.EventHandler(this.toolStripSeparator29_Click);
             // 
             // toolStripButton27
             // 
@@ -3783,6 +3926,7 @@ namespace shoping
             this.toolStripButton27.RightToLeftAutoMirrorImage = true;
             this.toolStripButton27.Size = new System.Drawing.Size(23, 47);
             this.toolStripButton27.Text = "Move next";
+            this.toolStripButton27.Click += new System.EventHandler(this.toolStripButton27_Click);
             // 
             // toolStripButton28
             // 
@@ -3792,16 +3936,19 @@ namespace shoping
             this.toolStripButton28.RightToLeftAutoMirrorImage = true;
             this.toolStripButton28.Size = new System.Drawing.Size(23, 47);
             this.toolStripButton28.Text = "Move last";
+            this.toolStripButton28.Click += new System.EventHandler(this.toolStripButton28_Click);
             // 
             // toolStripSeparator30
             // 
             this.toolStripSeparator30.Name = "toolStripSeparator30";
             this.toolStripSeparator30.Size = new System.Drawing.Size(6, 50);
+            this.toolStripSeparator30.Click += new System.EventHandler(this.toolStripSeparator30_Click);
             // 
             // toolStripSeparator31
             // 
             this.toolStripSeparator31.Name = "toolStripSeparator31";
             this.toolStripSeparator31.Size = new System.Drawing.Size(6, 50);
+            this.toolStripSeparator31.Click += new System.EventHandler(this.toolStripSeparator31_Click);
             // 
             // customerBindingNavigatorSaveItem
             // 
@@ -3815,6 +3962,7 @@ namespace shoping
             // 
             this.toolStripSeparator32.Name = "toolStripSeparator32";
             this.toolStripSeparator32.Size = new System.Drawing.Size(6, 50);
+            this.toolStripSeparator32.Click += new System.EventHandler(this.toolStripSeparator32_Click);
             // 
             // toolStripButton29
             // 
@@ -3830,6 +3978,7 @@ namespace shoping
             // 
             this.toolStripSeparator27.Name = "toolStripSeparator27";
             this.toolStripSeparator27.Size = new System.Drawing.Size(6, 50);
+            this.toolStripSeparator27.Click += new System.EventHandler(this.toolStripSeparator27_Click);
             // 
             // toolStripButton20
             // 
@@ -3845,6 +3994,7 @@ namespace shoping
             // 
             this.toolStripSeparator26.Name = "toolStripSeparator26";
             this.toolStripSeparator26.Size = new System.Drawing.Size(6, 50);
+            this.toolStripSeparator26.Click += new System.EventHandler(this.toolStripSeparator26_Click);
             // 
             // toolStripButton21
             // 
@@ -3862,6 +4012,7 @@ namespace shoping
             // 
             this.toolStripSeparator25.Name = "toolStripSeparator25";
             this.toolStripSeparator25.Size = new System.Drawing.Size(6, 50);
+            this.toolStripSeparator25.Click += new System.EventHandler(this.toolStripSeparator25_Click);
             // 
             // toolStripButton22
             // 
@@ -3896,12 +4047,12 @@ namespace shoping
             this.tabControl1.Cursor = System.Windows.Forms.Cursors.Default;
             this.tabControl1.Font = new System.Drawing.Font("Sitka Small", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.ItemSize = new System.Drawing.Size(500, 40);
-            this.tabControl1.Location = new System.Drawing.Point(-3, -2);
+            this.tabControl1.Location = new System.Drawing.Point(1, -1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.tabControl1.RightToLeftLayout = true;
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(969, 700);
+            this.tabControl1.Size = new System.Drawing.Size(966, 699);
             this.tabControl1.TabIndex = 16;
             this.tabControl1.Tag = "الرئيسية";
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
@@ -3918,7 +4069,7 @@ namespace shoping
             this.tabPage1.Location = new System.Drawing.Point(4, 44);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(961, 652);
+            this.tabPage1.Size = new System.Drawing.Size(958, 651);
             this.tabPage1.TabIndex = 1;
             this.tabPage1.Text = "الرئيسية";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click_1);
@@ -3926,7 +4077,7 @@ namespace shoping
             // button10
             // 
             this.button10.BackColor = System.Drawing.Color.Red;
-            this.button10.Location = new System.Drawing.Point(-4, 0);
+            this.button10.Location = new System.Drawing.Point(2, 5);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(39, 34);
             this.button10.TabIndex = 58;
@@ -3966,7 +4117,7 @@ namespace shoping
             this.bindingNavigator2.MovePreviousItem = null;
             this.bindingNavigator2.Name = "bindingNavigator2";
             this.bindingNavigator2.PositionItem = null;
-            this.bindingNavigator2.Size = new System.Drawing.Size(1050, 48);
+            this.bindingNavigator2.Size = new System.Drawing.Size(1051, 48);
             this.bindingNavigator2.TabIndex = 57;
             this.bindingNavigator2.Text = "0";
             this.bindingNavigator2.RefreshItems += new System.EventHandler(this.bindingNavigator2_RefreshItems_1);
@@ -3975,6 +4126,7 @@ namespace shoping
             // 
             this.toolStripSeparator45.Name = "toolStripSeparator45";
             this.toolStripSeparator45.Size = new System.Drawing.Size(6, 48);
+            this.toolStripSeparator45.Click += new System.EventHandler(this.toolStripSeparator45_Click);
             // 
             // home_nav
             // 
@@ -3995,6 +4147,7 @@ namespace shoping
             // 
             this.toolStripSeparator21.Name = "toolStripSeparator21";
             this.toolStripSeparator21.Size = new System.Drawing.Size(6, 48);
+            this.toolStripSeparator21.Click += new System.EventHandler(this.toolStripSeparator21_Click);
             // 
             // refrish
             // 
@@ -4014,6 +4167,7 @@ namespace shoping
             // 
             this.toolStripSeparator22.Name = "toolStripSeparator22";
             this.toolStripSeparator22.Size = new System.Drawing.Size(6, 48);
+            this.toolStripSeparator22.Click += new System.EventHandler(this.toolStripSeparator22_Click);
             // 
             // toolStripButton14
             // 
@@ -4031,6 +4185,7 @@ namespace shoping
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
             this.toolStripSeparator6.Size = new System.Drawing.Size(6, 48);
+            this.toolStripSeparator6.Click += new System.EventHandler(this.toolStripSeparator6_Click);
             // 
             // toolStripButton15
             // 
@@ -4069,6 +4224,7 @@ namespace shoping
             this.space1.Name = "space1";
             this.space1.Size = new System.Drawing.Size(6, 48);
             this.space1.Visible = false;
+            this.space1.Click += new System.EventHandler(this.space1_Click);
             // 
             // invoices
             // 
@@ -4089,6 +4245,7 @@ namespace shoping
             this.space2.Name = "space2";
             this.space2.Size = new System.Drawing.Size(6, 48);
             this.space2.Visible = false;
+            this.space2.Click += new System.EventHandler(this.space2_Click);
             // 
             // deliveries
             // 
@@ -4108,6 +4265,7 @@ namespace shoping
             this.space3.Name = "space3";
             this.space3.Size = new System.Drawing.Size(6, 48);
             this.space3.Visible = false;
+            this.space3.Click += new System.EventHandler(this.space3_Click);
             // 
             // panal_home
             // 
@@ -4136,6 +4294,7 @@ namespace shoping
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 38;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox3
             // 
@@ -4147,6 +4306,7 @@ namespace shoping
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 37;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // label8
             // 
@@ -4154,9 +4314,10 @@ namespace shoping
             this.label8.Font = new System.Drawing.Font("Sitka Small", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(228, 515);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(144, 29);
+            this.label8.Size = new System.Drawing.Size(124, 29);
             this.label8.TabIndex = 36;
-            this.label8.Text = "اختر الخادم للأتصال";
+            this.label8.Text = "إختر  إسم السرفر";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // server_name
             // 
@@ -4165,12 +4326,14 @@ namespace shoping
             this.server_name.Items.AddRange(new object[] {
             "DESKTOP-U0A2IQP\\HOSSAM",
             "DESKTOP-NNFPL6R",
-            "HOSSAM\\MSSQL"});
+            "HOSSAM"});
             this.server_name.Location = new System.Drawing.Point(32, 512);
             this.server_name.Name = "server_name";
+            this.server_name.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.server_name.Size = new System.Drawing.Size(192, 31);
             this.server_name.TabIndex = 35;
-            this.server_name.Text = "DESKTOP-U0A2IQP\\HOSSAM";
+            this.server_name.Text = "HOSSAM";
+            this.server_name.SelectedIndexChanged += new System.EventHandler(this.server_name_SelectedIndexChanged_2);
             this.server_name.MouseHover += new System.EventHandler(this.server_name_SelectedIndexChanged_1);
             // 
             // label1
@@ -4180,11 +4343,12 @@ namespace shoping
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(47, 563);
+            this.label1.Location = new System.Drawing.Point(21, 563);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(357, 31);
             this.label1.TabIndex = 31;
             this.label1.Text = "design by eng : Hossam ALyaari";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label5
             // 
@@ -4209,6 +4373,7 @@ namespace shoping
             this.wrongmsg.Name = "wrongmsg";
             this.wrongmsg.Size = new System.Drawing.Size(0, 30);
             this.wrongmsg.TabIndex = 27;
+            this.wrongmsg.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.wrongmsg_LinkClicked);
             // 
             // label6
             // 
@@ -4217,6 +4382,7 @@ namespace shoping
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(0, 23);
             this.label6.TabIndex = 29;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // restore_connect
             // 
@@ -4283,6 +4449,7 @@ namespace shoping
             this.button6.TabIndex = 19;
             this.button6.Text = "Sale Monitor";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -4340,7 +4507,7 @@ namespace shoping
             this.panel_login.Controls.Add(this.button13);
             this.panel_login.Location = new System.Drawing.Point(275, 44);
             this.panel_login.Name = "panel_login";
-            this.panel_login.Size = new System.Drawing.Size(394, 613);
+            this.panel_login.Size = new System.Drawing.Size(339, 608);
             this.panel_login.TabIndex = 8;
             this.panel_login.Visible = false;
             this.panel_login.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_login_Paint);
@@ -4367,6 +4534,7 @@ namespace shoping
             this.msg.Name = "msg";
             this.msg.Size = new System.Drawing.Size(0, 19);
             this.msg.TabIndex = 29;
+            this.msg.Click += new System.EventHandler(this.msg_Click);
             // 
             // label9
             // 
@@ -4377,6 +4545,7 @@ namespace shoping
             this.label9.Size = new System.Drawing.Size(80, 20);
             this.label9.TabIndex = 28;
             this.label9.Text = "كلمة المرور";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
@@ -4387,6 +4556,7 @@ namespace shoping
             this.label10.Size = new System.Drawing.Size(86, 20);
             this.label10.TabIndex = 27;
             this.label10.Text = "اسم المستخدم";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // textBox1
             // 
@@ -4400,6 +4570,7 @@ namespace shoping
             this.textBox1.TabIndex = 26;
             this.textBox1.Tag = "";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -4411,6 +4582,7 @@ namespace shoping
             this.textBox2.Size = new System.Drawing.Size(202, 33);
             this.textBox2.TabIndex = 25;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // button13
             // 
@@ -4435,6 +4607,7 @@ namespace shoping
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 32;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // tabPage4
             // 
@@ -4444,7 +4617,7 @@ namespace shoping
             this.tabPage4.Location = new System.Drawing.Point(4, 44);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(961, 652);
+            this.tabPage4.Size = new System.Drawing.Size(958, 651);
             this.tabPage4.TabIndex = 4;
             this.tabPage4.Text = "إدارة النظام";
             this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
@@ -4458,6 +4631,7 @@ namespace shoping
             this.label16.Size = new System.Drawing.Size(307, 43);
             this.label16.TabIndex = 59;
             this.label16.Text = "من فضلك سجل الدخول اولا";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // bindingNavigator4
             // 
@@ -4482,10 +4656,11 @@ namespace shoping
             this.bindingNavigator4.MovePreviousItem = null;
             this.bindingNavigator4.Name = "bindingNavigator4";
             this.bindingNavigator4.PositionItem = null;
-            this.bindingNavigator4.Size = new System.Drawing.Size(833, 40);
+            this.bindingNavigator4.Size = new System.Drawing.Size(955, 40);
             this.bindingNavigator4.TabIndex = 58;
             this.bindingNavigator4.Text = "bindingNavigator4";
             this.bindingNavigator4.Visible = false;
+            this.bindingNavigator4.RefreshItems += new System.EventHandler(this.bindingNavigator4_RefreshItems);
             this.bindingNavigator4.Click += new System.EventHandler(this.back_tap1_Click);
             // 
             // toolStripButton43
@@ -4499,11 +4674,13 @@ namespace shoping
             this.toolStripButton43.Tag = "الرئيسية";
             this.toolStripButton43.Text = "الرئيسية";
             this.toolStripButton43.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.toolStripButton43.Click += new System.EventHandler(this.toolStripButton43_Click);
             // 
             // toolStripSeparator41
             // 
             this.toolStripSeparator41.Name = "toolStripSeparator41";
             this.toolStripSeparator41.Size = new System.Drawing.Size(6, 40);
+            this.toolStripSeparator41.Click += new System.EventHandler(this.toolStripSeparator41_Click);
             // 
             // toolStripButton49
             // 
@@ -4523,6 +4700,7 @@ namespace shoping
             this.toolStripSeparator47.Name = "toolStripSeparator47";
             this.toolStripSeparator47.Size = new System.Drawing.Size(6, 40);
             this.toolStripSeparator47.Visible = false;
+            this.toolStripSeparator47.Click += new System.EventHandler(this.toolStripSeparator47_Click);
             // 
             // toolStripButton50
             // 
@@ -4546,6 +4724,7 @@ namespace shoping
             // 
             this.toolStripSeparator44.Name = "toolStripSeparator44";
             this.toolStripSeparator44.Size = new System.Drawing.Size(6, 40);
+            this.toolStripSeparator44.Click += new System.EventHandler(this.toolStripSeparator44_Click);
             // 
             // log
             // 
@@ -4570,6 +4749,7 @@ namespace shoping
             this.sname.Size = new System.Drawing.Size(202, 33);
             this.sname.TabIndex = 18;
             this.sname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.sname.TextChanged += new System.EventHandler(this.sname_TextChanged);
             // 
             // spass
             // 
@@ -4583,6 +4763,7 @@ namespace shoping
             this.spass.TabIndex = 19;
             this.spass.Tag = "";
             this.spass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.spass.TextChanged += new System.EventHandler(this.spass_TextChanged);
             // 
             // name
             // 
@@ -4592,6 +4773,7 @@ namespace shoping
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(97, 30);
             this.name.TabIndex = 20;
+            this.name.Click += new System.EventHandler(this.name_Click);
             // 
             // password
             // 
@@ -4601,6 +4783,7 @@ namespace shoping
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(79, 30);
             this.password.TabIndex = 21;
+            this.password.Click += new System.EventHandler(this.password_Click);
             // 
             // back
             // 
@@ -4637,6 +4820,7 @@ namespace shoping
             this.connect.Size = new System.Drawing.Size(12, 26);
             this.connect.TabIndex = 17;
             this.connect.TabStop = true;
+            this.connect.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.connect_LinkClicked);
             // 
             // label4
             // 
@@ -4645,6 +4829,7 @@ namespace shoping
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(0, 23);
             this.label4.TabIndex = 20;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // msgdisconnect
             // 
@@ -4655,6 +4840,7 @@ namespace shoping
             this.msgdisconnect.Name = "msgdisconnect";
             this.msgdisconnect.Size = new System.Drawing.Size(0, 26);
             this.msgdisconnect.TabIndex = 18;
+            this.msgdisconnect.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.msgdisconnect_LinkClicked);
             // 
             // label3
             // 
@@ -4672,6 +4858,7 @@ namespace shoping
             this.label3.Size = new System.Drawing.Size(356, 100);
             this.label3.TabIndex = 21;
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -4684,6 +4871,7 @@ namespace shoping
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(299, 30);
             this.label2.TabIndex = 22;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox2
             // 
@@ -4695,6 +4883,7 @@ namespace shoping
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 23;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // query
             // 
@@ -4775,6 +4964,7 @@ namespace shoping
             this.sale_monitor.TabIndex = 13;
             this.sale_monitor.Text = "Sale Monitor";
             this.sale_monitor.UseVisualStyleBackColor = false;
+            this.sale_monitor.Click += new System.EventHandler(this.sale_monitor_Click);
             // 
             // store_monitor
             // 
@@ -4829,6 +5019,7 @@ namespace shoping
             // 
             this.employeeBindingSource2.DataMember = "employee";
             this.employeeBindingSource2.DataSource = this.advanceDataSet;
+            this.employeeBindingSource2.CurrentChanged += new System.EventHandler(this.employeeBindingSource2_CurrentChanged);
             // 
             // tableAdapterManager4
             // 
@@ -4870,6 +5061,7 @@ namespace shoping
             // 
             this.toolStripSeparator42.Name = "toolStripSeparator42";
             this.toolStripSeparator42.Size = new System.Drawing.Size(6, 41);
+            this.toolStripSeparator42.Click += new System.EventHandler(this.toolStripSeparator42_Click);
             // 
             // customer_DataTableTableAdapter1TableAdapter
             // 
@@ -4893,6 +5085,8 @@ namespace shoping
             this.Name = "home";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Tag = "";
             this.Text = "  محلات الحســـــــين التجاريــــــــة>> الرئيســية  ";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.home_FormClosing);
@@ -5003,7 +5197,7 @@ namespace shoping
                             bindingNavigator4.Visible = true;
                             //refresh.Visible = true;
                             label16.Visible = false;
-           panel1.Visible = false;
+            panel1.Visible = false;
             panel3.Visible = false;
 
        
@@ -5014,8 +5208,8 @@ namespace shoping
                             groupBox1.Visible = true;
                             //  hide.Visible = false;//يعرض لوحة كل سجلات المسلمات حسب التاريخ
                             tabControl1.Width = 974;
-                            this.Width = 984;
-                            this.Height = 734;
+                          //  this.Width = 984;
+                           // this.Height = 734;
                             tabControl1.Height = 700;
                             fillToolStripButton_Click_1(sender, e);
                             
@@ -6181,6 +6375,941 @@ namespace shoping
         private void btn_MouseHover(object sender, EventArgs e)
         { 
             
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void end_totalLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void statusLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void custom_idLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void custom_phoneLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void genderLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void start_dateLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void creditLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emp_idLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emp_passwordLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emp_statusLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void indivisualDeliverBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customerBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deliveriesSelectProcBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void proc_select_invoiceBindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void proc_select_invoiceBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void employeeBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_num_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_part_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void topToolStripLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void partToolStripLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void partToolStripTextBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void topToolStripTextBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripTextBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator17_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void last_account_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void last_accountTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void noticesLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void noticesTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deliver_dateLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deliver_dateDateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customerDataTableTableAdapter1BindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void delivery_idLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void delivery_idTextBox_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void custom_nameLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void delivered_moneyLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void delivered_moneyTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void after_deliveringLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void after_deliveringTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emp_nameLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emp_nameTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void indivisualDeliverDataGridView_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customerDataTableBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void delivery_idLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void d_id_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void custom_nameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void last_accountLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void delivered_moneyLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mony_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void noticesLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void notices_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emp_nameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emp_name_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingNavigatorCountItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingNavigatorMoveFirstItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingNavigatorMovePreviousItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingNavigatorSeparator_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingNavigatorPositionItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingNavigatorSeparator1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingNavigatorMoveNextItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator24_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator23_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customerBindingSource2_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void vwcustomerBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customerBindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emp_nameLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bindingNavigator3_RefreshItems(object sender, EventArgs e)
+        {
+
+        }
+
+        private void employeeBindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton31_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton32_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton33_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator33_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripTextBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator34_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton34_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton35_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator35_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator36_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator37_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator38_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator39_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator40_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emp_idTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emp_nameTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emp_passwordTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emp_statusTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customerDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void bindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void custom_idTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void start_dateDateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void creditTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void credit1TextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void end_totalTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void statusTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void genderTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void custom_phoneTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customerBindingNavigator_RefreshItems(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton24_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton25_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton26_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator28_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripTextBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator29_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton27_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton28_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator30_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator31_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator32_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator27_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator26_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator25_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator45_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void space1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void space2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void space3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void server_name_SelectedIndexChanged_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wrongmsg_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void msg_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingNavigator4_RefreshItems(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton43_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator41_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator47_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator44_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void spass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void name_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void password_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void connect_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void msgdisconnect_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sale_monitor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void employeeBindingSource2_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator42_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
