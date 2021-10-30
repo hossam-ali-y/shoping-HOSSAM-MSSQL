@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSchoolDB_AlsaaidahDataSet" targetNamespace="http://tempuri.org/DSchoolDB_AlsaaidahDataSet.xsd" xmlns:mstns="http://tempuri.org/DSchoolDB_AlsaaidahDataSet.xsd" xmlns="http://tempuri.org/DSchoolDB_AlsaaidahDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DSchoolDB_AlsaaidahConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DSchoolDB_AlsaaidahConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.shoping.Properties.Settings.GlobalReference.Default.DSchoolDB_AlsaaidahConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VW_GuardiansTableAdapter" GeneratorDataComponentClassName="VW_GuardiansTableAdapter" Name="VW_Guardians" UserDataComponentName="VW_GuardiansTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DSchoolDB_AlsaaidahConnectionString (Settings)" DbObjectName="DSchoolDB_Alsaaidah.dbo.VW_Guardians" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, GuardianName, Alais, SurName, Address, Dob, Phone, Email, Age, User_Id, Account_Id, CreateDate, SessionUser_Id, Year_Id, SchoolYear, TotalFees, TotalDiscounts, RequiredFees FROM dbo.VW_Guardians</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="GuardianName" DataSetColumn="GuardianName" />
+              <Mapping SourceColumn="Alais" DataSetColumn="Alais" />
+              <Mapping SourceColumn="SurName" DataSetColumn="SurName" />
+              <Mapping SourceColumn="Address" DataSetColumn="Address" />
+              <Mapping SourceColumn="Dob" DataSetColumn="Dob" />
+              <Mapping SourceColumn="Phone" DataSetColumn="Phone" />
+              <Mapping SourceColumn="Email" DataSetColumn="Email" />
+              <Mapping SourceColumn="Age" DataSetColumn="Age" />
+              <Mapping SourceColumn="User_Id" DataSetColumn="User_Id" />
+              <Mapping SourceColumn="Account_Id" DataSetColumn="Account_Id" />
+              <Mapping SourceColumn="CreateDate" DataSetColumn="CreateDate" />
+              <Mapping SourceColumn="SessionUser_Id" DataSetColumn="SessionUser_Id" />
+              <Mapping SourceColumn="Year_Id" DataSetColumn="Year_Id" />
+              <Mapping SourceColumn="SchoolYear" DataSetColumn="SchoolYear" />
+              <Mapping SourceColumn="TotalFees" DataSetColumn="TotalFees" />
+              <Mapping SourceColumn="TotalDiscounts" DataSetColumn="TotalDiscounts" />
+              <Mapping SourceColumn="RequiredFees" DataSetColumn="RequiredFees" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSchoolDB_AlsaaidahDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DSchoolDB_AlsaaidahDataSet" msprop:Generator_UserDSName="DSchoolDB_AlsaaidahDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VW_Guardians" msprop:Generator_TableClassName="VW_GuardiansDataTable" msprop:Generator_TableVarName="tableVW_Guardians" msprop:Generator_TablePropName="VW_Guardians" msprop:Generator_RowDeletingName="VW_GuardiansRowDeleting" msprop:Generator_RowChangingName="VW_GuardiansRowChanging" msprop:Generator_RowEvHandlerName="VW_GuardiansRowChangeEventHandler" msprop:Generator_RowDeletedName="VW_GuardiansRowDeleted" msprop:Generator_UserTableName="VW_Guardians" msprop:Generator_RowChangedName="VW_GuardiansRowChanged" msprop:Generator_RowEvArgName="VW_GuardiansRowChangeEvent" msprop:Generator_RowClassName="VW_GuardiansRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="GuardianName" msprop:Generator_ColumnVarNameInTable="columnGuardianName" msprop:Generator_ColumnPropNameInRow="GuardianName" msprop:Generator_ColumnPropNameInTable="GuardianNameColumn" msprop:Generator_UserColumnName="GuardianName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Alais" msprop:Generator_ColumnVarNameInTable="columnAlais" msprop:Generator_ColumnPropNameInRow="Alais" msprop:Generator_ColumnPropNameInTable="AlaisColumn" msprop:Generator_UserColumnName="Alais" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SurName" msprop:Generator_ColumnVarNameInTable="columnSurName" msprop:Generator_ColumnPropNameInRow="SurName" msprop:Generator_ColumnPropNameInTable="SurNameColumn" msprop:Generator_UserColumnName="SurName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Address" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnPropNameInTable="AddressColumn" msprop:Generator_UserColumnName="Address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Dob" msprop:Generator_ColumnVarNameInTable="columnDob" msprop:Generator_ColumnPropNameInRow="Dob" msprop:Generator_ColumnPropNameInTable="DobColumn" msprop:Generator_UserColumnName="Dob" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Phone" msprop:Generator_ColumnVarNameInTable="columnPhone" msprop:Generator_ColumnPropNameInRow="Phone" msprop:Generator_ColumnPropNameInTable="PhoneColumn" msprop:Generator_UserColumnName="Phone" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_UserColumnName="Email" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Age" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnAge" msprop:Generator_ColumnPropNameInRow="Age" msprop:Generator_ColumnPropNameInTable="AgeColumn" msprop:Generator_UserColumnName="Age" type="xs:int" minOccurs="0" />
+              <xs:element name="User_Id" msprop:Generator_ColumnVarNameInTable="columnUser_Id" msprop:Generator_ColumnPropNameInRow="User_Id" msprop:Generator_ColumnPropNameInTable="User_IdColumn" msprop:Generator_UserColumnName="User_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Account_Id" msprop:Generator_ColumnVarNameInTable="columnAccount_Id" msprop:Generator_ColumnPropNameInRow="Account_Id" msprop:Generator_ColumnPropNameInTable="Account_IdColumn" msprop:Generator_UserColumnName="Account_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="CreateDate" msprop:Generator_ColumnVarNameInTable="columnCreateDate" msprop:Generator_ColumnPropNameInRow="CreateDate" msprop:Generator_ColumnPropNameInTable="CreateDateColumn" msprop:Generator_UserColumnName="CreateDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SessionUser_Id" msprop:Generator_ColumnVarNameInTable="columnSessionUser_Id" msprop:Generator_ColumnPropNameInRow="SessionUser_Id" msprop:Generator_ColumnPropNameInTable="SessionUser_IdColumn" msprop:Generator_UserColumnName="SessionUser_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Year_Id" msprop:Generator_ColumnVarNameInTable="columnYear_Id" msprop:Generator_ColumnPropNameInRow="Year_Id" msprop:Generator_ColumnPropNameInTable="Year_IdColumn" msprop:Generator_UserColumnName="Year_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="SchoolYear" msprop:Generator_ColumnVarNameInTable="columnSchoolYear" msprop:Generator_ColumnPropNameInRow="SchoolYear" msprop:Generator_ColumnPropNameInTable="SchoolYearColumn" msprop:Generator_UserColumnName="SchoolYear" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalFees" msprop:Generator_ColumnVarNameInTable="columnTotalFees" msprop:Generator_ColumnPropNameInRow="TotalFees" msprop:Generator_ColumnPropNameInTable="TotalFeesColumn" msprop:Generator_UserColumnName="TotalFees" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalDiscounts" msprop:Generator_ColumnVarNameInTable="columnTotalDiscounts" msprop:Generator_ColumnPropNameInRow="TotalDiscounts" msprop:Generator_ColumnPropNameInTable="TotalDiscountsColumn" msprop:Generator_UserColumnName="TotalDiscounts" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RequiredFees" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnRequiredFees" msprop:Generator_ColumnPropNameInRow="RequiredFees" msprop:Generator_ColumnPropNameInTable="RequiredFeesColumn" msprop:Generator_UserColumnName="RequiredFees" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:VW_Guardians" />
+      <xs:field xpath="mstns:Id" />
+      <xs:field xpath="mstns:Year_Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
